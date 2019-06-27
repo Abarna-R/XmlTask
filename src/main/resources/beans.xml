@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="actor1" class="com.stackroute.Actor">
+		<property name="name" value="name1"/>
+		<property name="gender" value="male"/>
+		<property name="age" value="21"/>
+	</bean>
+	<bean id="movie1" class="com.stackroute.Movie">
+		<property name="actor" ref="actor1"/>
+	</bean>
+
+
+	<bean id="actor2" class="com.stackroute.Actor">
+		<property name="name" value="name2"/>
+		<property name="gender" value="female"/>
+		<property name="age" value="20"/>
+	</bean>
+	<bean id="movie2" class="com.stackroute.Movie">
+		<property name="actor" ref="actor2"/>
+	</bean>
+
+	<bean id="actor3" class="com.stackroute.Actor">
+		<property name="name" value="name3"/>
+		<property name="gender" value="male"/>
+		<property name="age" value="27"/>
+	</bean>
+	<bean id="movie3" class="com.stackroute.Movie">
+		<property name="actor" ref="actor3"/>
+	</bean>
+</beans>
